@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lighttheme">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verify +91 9560083681"
+        style="?android:attr/textAppearanceLarge"
+        android:paddingTop="24dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="20dp"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Messenger will send a one time sms message to verify your phone number.\n\nCarrier SMS charges may apply."
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="24dp"
+        android:layout_below="@+id/title"
+        style="?android:attr/textAppearanceMedium"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:text="Cancel"
+        android:layout_toLeftOf="@+id/verify"
+        android:layout_alignTop="@+id/verify"
+        style="?android:attr/textAppearanceButton"
+        android:textColor="@color/blue500"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/verify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:text="Verify"
+        android:padding="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        style="?android:attr/textAppearanceButton"
+        android:textColor="@color/blue500"/>
+
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Messenger</string>
+    <string name="Start">Start </string>
+    <string name="Chat">Chat</string>
+    <string name="delete">Delete</string>
+    <string name="Chats">Chats</string>
+    <string name="Contacts">Contacts</string>
+    <string name="Groups">Groups</string>
+    <string name="My_Page">My Page</string>
+    <string name="Settings">Settings</string>
+    <string name="Search">Search</string>
+    <string name="opendrawer">My Page</string>
+    <string name="Edit.contacts">Edit contacts</string>
+    <string name="closedrawer">Settings</string>
+    <string name="Change.Theme">Change theme</string>
+    <string name="No.New.Chat">No New Chat.</string>
+    <string name="No.Contacts.On.Chat">No Contacts On Chat. </string>
+    <string name="Number">Number</string>
+    <string name="Verify.Number">Verify Number</string>
+    <string name="Status">Status</string>
+    <string name="Other.Statuses">Other Statuses</string>
+    <string name="Verify">Verify</string>
+    <string name="number">number</string>
+    <string name="swipe.left.to.start">Swipe left to start</string>
+    <string name="number.will.be.verified.using.sms">Number will be verified using SMS</string>
+    <string-array name="country_code">
+        <item>+91</item>
+    </string-array>
+    <string-array name="country">
+        <item>India</item>
+    </string-array>
+    <string-array name="country_ID">
+        <item>IN</item>
+    </string-array>
+</resources>

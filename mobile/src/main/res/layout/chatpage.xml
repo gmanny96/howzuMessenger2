@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?messengerBack"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:titleTextColor="?messengerBack"
+        android:background="@color/blue500"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+
+    <View
+        android:id="@+id/shadow"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_below="@+id/toolbar"
+        android:background="@drawable/shadowlight"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shadow"
+        android:layout_above="@+id/shadow1"
+        android:paddingBottom="4dp"/>
+
+    <View
+        android:id="@+id/shadow1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_above="@+id/tab"
+        android:background="@drawable/shadowlightreverse"/>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/message"
+        android:visibility="gone"/>
+
+    <android.support.text.emoji.widget.EmojiAppCompatEditText
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:maxHeight="100dp"
+        android:minHeight="48dp"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:layout_toLeftOf="@+id/emoji"
+        android:layout_toStartOf="@+id/emoji"
+        android:layout_alignParentBottom="true"
+        android:hint="Message"
+        android:textColorHint="@color/grey500"
+        android:textCursorDrawable="@drawable/cursor"/>
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/emoji"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@color/transparent"
+        android:src="@drawable/emoticon"
+        android:tint="@color/click"
+        android:visibility="gone"
+        android:layout_toLeftOf="@+id/send"
+        android:layout_toStartOf="@+id/send"
+        android:layout_alignParentBottom="true" />
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/send"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:tint="@color/click"
+        android:background="@color/transparent"
+        android:src="@drawable/send"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+</android.support.constraint.ConstraintLayout>

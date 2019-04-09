@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/message"
+        style="@style/text.primary"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="72dp"
+        android:layout_marginRight="16dp"
+        android:text="hi"
+        android:textColor="?messengerBack"
+        android:background="@drawable/bubble_circle"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        android:layout_marginTop="2dp"
+        android:backgroundTint="@color/blue500"/>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/on_m"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="gone"
+        android:layout_marginLeft="72dp"
+        android:layout_marginRight="2dp"
+        android:layout_alignBottom="@+id/message"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/time"
+        style="@style/text.secondary"
+        android:visibility="gone"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="72dp"
+        android:layout_marginRight="16dp"
+        android:text="2:34 pm"
+        android:layout_below="@+id/message"
+        android:textSize="14sp" />
+
+</RelativeLayout>

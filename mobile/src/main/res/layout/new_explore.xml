@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:navigationIcon="@drawable/back"
+        android:visibility="invisible">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/transparent"
+            android:hint="Name or Number"
+            android:paddingRight="8dp"
+            android:textCursorDrawable="@drawable/cursor"/>
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/searchb"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="?messengerBack"
+        android:hint="Search"
+        android:paddingLeft="8dp"
+        android:layout_toRightOf="@+id/icon"
+        android:cursorVisible="false"
+        android:textCursorDrawable="@drawable/cursor"/>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:padding="16dp"
+        android:tint="@color/grey500"
+        android:background="?messengerBack"
+        android:id="@+id/icon"
+        android:src="@drawable/magnifyv"
+        android:layout_width="56dp"
+        android:layout_height="56dp" />
+
+    <View
+        android:id="@+id/shadow"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/toolbar"
+        android:background="@drawable/shadowlight" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/shadow"
+        android:paddingTop="4dp" />
+
+</RelativeLayout>

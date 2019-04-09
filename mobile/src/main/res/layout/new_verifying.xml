@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?messengerBack">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verifying +91 9560083681"
+        style="?android:attr/textAppearanceLarge"
+        android:layout_toRightOf="@+id/load"
+        android:paddingTop="24dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="timer"
+        android:layout_below="@+id/title"
+        android:textSize="14sp"
+        android:layout_toRightOf="@+id/load"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="20dp"/>
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/code"
+        android:layout_below="@+id/timer"
+        android:inputType="textPersonName"
+        android:hint="Enter Code"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="?messengerBack"
+        android:gravity="center_vertical"
+        android:textSize="20sp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:maxLines="1"
+        android:maxEms="20"/>
+
+    <View
+        android:id="@+id/s2"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_height="1dp"
+        android:layout_below="@+id/code"
+        android:background="@drawable/shadowlight" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/hint"
+        android:layout_below="@+id/s2"
+        android:layout_margin="16dp"
+        android:textSize="16sp"
+        android:text="Please make sure you have a working SMS plan."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/again"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/blue500"
+        android:text="Resend SMS"
+        android:padding="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_below="@+id/hint"
+        style="?android:attr/textAppearanceButton"
+        android:textColor="?messengerBack"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:text="Change number"
+        android:layout_below="@+id/again"
+        android:padding="16dp"
+        style="?android:attr/textAppearanceButton"
+        android:textColor="@color/blue500"/>
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?messengerBack">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Edit Status"
+        app:titleTextAppearance="?android:attr/textAppearanceLarge"
+        app:navigationIcon="@drawable/back" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/statusinput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:layout_below="@+id/toolbar"
+        android:text="i am using messenger"
+        android:maxLength="140"
+        android:padding="16dp"
+        android:textSize="16sp" />
+
+    <View
+        android:id="@+id/shadow"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/shadowlight"
+        android:layout_below="@id/statusinput"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shadow"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/con"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        app:fabSize="normal"
+        app:backgroundTint="@color/blue500"
+        android:layout_margin="16dp"/>
+
+</RelativeLayout>

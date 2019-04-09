@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/search"
+        android:icon="@drawable/magnifyv"
+        app:showAsAction="ifRoom"
+        android:title="Search" />
+
+    <item android:id="@+id/refresh"
+        android:icon="@drawable/refreshv"
+        app:showAsAction="ifRoom"
+        android:title="Refresh" />
+
+    <item android:id="@+id/invite"
+        android:icon="@drawable/invitev"
+        app:showAsAction="ifRoom"
+        android:title="Invite" />
+
+</menu>

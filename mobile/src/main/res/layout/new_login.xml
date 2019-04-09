@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?messengerBack"
+    android:layout_centerVertical="true">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        style="?android:attr/textAppearanceLarge"
+        android:paddingTop="24dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="20dp"/>
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/name"
+        android:layout_below="@+id/title"
+        android:inputType="textPersonName"
+        android:hint="Enter name"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="?messengerBack"
+        android:gravity="center_vertical"
+        android:textSize="20sp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:maxLines="1"
+        android:maxEms="20"/>
+
+    <View
+        android:id="@+id/s2"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_height="1dp"
+        android:layout_below="@+id/name"
+        android:background="@drawable/shadowlight" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/cc"
+        android:layout_below="@+id/s2"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:text="(IN) +91"
+        android:background="?messengerBack"
+        android:textSize="20sp"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingStart="16dp"
+        android:textColor="?android:attr/textColorPrimary"/>
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/number"
+        android:layout_below="@+id/s2"
+        android:inputType="phone"
+        android:hint="Enter phone number"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_toRightOf="@+id/cc"
+        android:layout_toEndOf="@+id/cc"
+        android:background="?messengerBack"
+        android:textSize="20sp"
+        android:gravity="center_vertical"
+
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:maxLines="1"/>
+
+    <View
+        android:id="@+id/s3"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_height="1dp"
+        android:layout_below="@+id/number"
+        android:background="@drawable/shadowlight"
+        android:layout_marginBottom="8dp"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_below="@+id/s3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"
+        android:text="By Continuing you agree to Privacy policy and Terms and conditions."/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/con"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        app:fabSize="normal"
+        app:backgroundTint="@color/blue500"
+        android:layout_margin="16dp"/>
+
+</RelativeLayout>

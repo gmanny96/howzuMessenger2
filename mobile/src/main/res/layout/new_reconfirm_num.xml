@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/lighttheme">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Verify +91 9560083681"
+        app:titleTextAppearance="?android:attr/textAppearanceLarge"
+        app:navigationIcon="@drawable/back" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Messenger will send a one time sms message to verify your phone number.\n\nCarrier SMS charges may apply."
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="24dp"
+        android:layout_below="@+id/toolbar"
+        style="?android:attr/textAppearanceMedium"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/con"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        app:fabSize="normal"
+        app:backgroundTint="@color/blue500"
+        android:layout_margin="16dp"/>
+
+</RelativeLayout>
